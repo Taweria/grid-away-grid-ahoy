@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --button-active: #65B2EB;
+    --background: #E6EFF6;
+    --shadow: #9ab9d1;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--background);
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.nav a{
+    color: grey;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+  
+.nav a:hover{
+    border-radius: 15px;
+    background-color: var(--shadow);
+    color: black;
+}
+  
+.nav a.active{
+    border-radius: 15px;
+    background-color: #29a175;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.grid{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+}
+
+.card{
+    display: grid;
+    grid-template: 4/1; 
+    text-align: center;
+    background-color: white;
+    padding: 3rem;
+    aspect-ratio: 1/2;
+    border-radius: 5px;
+}
+
+img{
+    width: 50%;
+    height: auto;
+    justify-self: center;
+}
+
+h2{
+    font-size: 25px;
+    color: grey;
+}
+
+p{
+    font-size: 20px;
+    color: lightgrey;
+}
+
+
+.button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button::before{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    content: '';
+    width: 150px;
+    height: 1px;
+    background-color: lightgrey;
+    transform: translateX(-50%);
+}
+
+button:hover::before{
+    opacity: 0;
+}
+
+button{
+    background-color: white;
+    color: grey;
+	border-radius:50px;
+	border: none;
+    font-style: bold;
+	font-size: 25px;
+    padding: 0.7rem 1.5rem;
+}
+
+button:hover{
+    background-color: var(--button-active);
+    color: white;
+    cursor:pointer;
+    box-shadow: 1px 10px 30px var(--shadow);
+    transition: 0.5s ease;
+}
+
+.card:has(button:hover) {
+    box-shadow: 1px 10px 30px var(--shadow);
+    transition: 0.5s ease;
+}
+
+.footer{
+    margin-top: 50px;
+    color: grey;
+    font-size: 15px;
+}
+
