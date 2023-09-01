@@ -131,3 +131,70 @@ button:hover{
     font-size: 15px;
 }
 
+/* Responsive */
+
+/* smartphones */
+@media only screen and (max-width: 480px) {
+    .grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        gap: 20px;
+    }
+    .nav a{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    
+    p{
+        font-size: 15px;
+    }
+    button{
+        font-size: 20px;
+    }
+    img{
+        width: 40%;
+        height: auto;
+    }
+
+    .footer{
+        font-size: 10px;
+    }
+}
+
+/* tablets */
+@media only screen and (max-width: 767px) and (min-width: 410px) {
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 30px;
+    }
+    .nav a{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    
+    p{
+        font-size: 15px;
+    }
+    button{
+        font-size: 20px;
+    }
+    img{
+        width: 40%;
+        height: auto;
+    }
+
+    .footer{
+        font-size: 10px;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 767px) {
+    
+}
+
