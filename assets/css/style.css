@@ -134,7 +134,7 @@ button:hover{
 /* Responsive */
 
 /* smartphones */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 700px) {
     .grid{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(8, 1fr);
@@ -164,7 +164,7 @@ button:hover{
 }
 
 /* tablets */
-@media only screen and (max-width: 767px) and (min-width: 480px) {
+@media only screen and (max-width: 1260px) and (min-width: 700px) {
     .grid{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
@@ -193,8 +193,12 @@ button:hover{
     }
 }
 
-/* desktop */
-@media only screen and (min-width: 767px) {
-    
+/* smaall desktop */
+@media only screen and (max-width: 1600px) and (min-width: 1260px) {
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 30px;
+    }
 }
 
