@@ -1,8 +1,5 @@
 # grid-away-grid-ahoy
 
-## Contributors
-
-[Ali Elodie (Taweria )]( https://github.com/Taweria)
 
 ## What's the project?
 
